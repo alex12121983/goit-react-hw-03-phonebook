@@ -1,0 +1,17 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: #f9f9f9;
+    margin-bottom: 0;  
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roroto', sans-serif;
+    margin: 10px 0;
+}
