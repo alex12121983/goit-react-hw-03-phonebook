@@ -5,7 +5,7 @@ import css from './Filter.module.css'
 class Filter extends Component {
    
     render() {
-        const {filter, searchContact} = this.props
+        const {value, onChange} = this.props
         return (
             <div className={css.filter}>
                 <h3>Find contacts by name</h3>
@@ -17,8 +17,8 @@ class Filter extends Component {
                     pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                     title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                     aria-describedby="nameHelp"
-                    onChange={searchContact}
-                    value={filter}
+                    onChange={onChange}
+                    value={value}
                 />
             </div>
         )
@@ -28,5 +28,5 @@ class Filter extends Component {
 export default Filter
 
 Filter.propTypes = {
-    filter: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
   };
